@@ -1,0 +1,24 @@
+sharmecanadaplatform_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: SharmecanadaplatformBundle:Default:index }
+
+sharmecanadaplatform_home:
+    path:      /platform
+    defaults:  { _controller: SharmecanadaplatformBundle:Accueil:index }
+
+sharmecanadaplatform_loggin:
+    path:      /connexion
+    defaults:  { _controller: SharmecanadaplatformBundle:Loggin:pageSignin }
+
+sharmecanadaplatform_loggup:
+    path:      /nouveau-compte
+    defaults:  { _controller: SharmecanadaplatformBundle:Loggin:pageSignup }
+
+sharmecanadaplatform_about:
+    path:      /apropos
+    defaults:  { _controller: SharmecanadaplatformBundle:Contact:apropos }
+
+sharmecanadaplatform_contact:
+    path:      /contact
+    defaults:  { _controller: SharmecanadaplatformBundle:Contact:contact }
+
