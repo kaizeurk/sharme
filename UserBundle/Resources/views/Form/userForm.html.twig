@@ -1,0 +1,46 @@
+{# empty Twig template #}
+{% extends "SharmecanadaUserBundle:Loggin:page-signup.html" %}
+ {% block form %}
+  {{ parent() }}
+  {{ form_start(form , { 'attr': {'class': 'form-control'} }) }}
+  {{ form_errors(form) }}
+
+    <!-- alert failed -->
+    <div class="alert alert-danger">
+      <i class="fa fa-frown-o"></i>
+      <strong>Mot de Passe</strong> incorrect!
+    </div>
+
+    <!-- /test -->
+    <div class="row">
+      <div class="form-group">
+        <div class="col-md-12">
+          <label>Adresse Courriel</label>
+          {{ form_errors(form.username) }}
+          {{ form_widget(form.username, { 'attr': {'class': 'form-control'} }) }}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <div class="col-md-6">
+          {{ form_row(form.password.first, { 'attr': {'class': 'form-control'} }) }}
+
+        </div>
+        <div class="col-md-6">
+          {{ form_row(form.password.second, { 'attr': {'class': 'form-control'} }) }}
+
+        </div>
+      </div>
+    </div>
+
+    <!-- /fintest-->
+
+    <div class="row">
+      <div class="col-md-12">
+        <input type="submit" value="Enregistrer" class="btn btn-primary pull-right push-bottom" data-loading-text="Loading...">
+      </div>
+    </div>
+  {{ form_end(form) }}
+
+{% endblock %}

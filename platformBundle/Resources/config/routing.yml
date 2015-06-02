@@ -1,0 +1,19 @@
+sharmecanadaplatform_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: SharmecanadaplatformBundle:Default:index }
+
+sharmecanadaplatform_home:
+    path:      /platform
+    defaults:  { _controller: SharmecanadaplatformBundle:Accueil:index }
+
+sharmecanadaplatform_about:
+    path:      /apropos
+    defaults:  { _controller: SharmecanadaplatformBundle:Contact:apropos }
+
+sharmecanadaplatform_contact:
+    path:      /contact
+    defaults:  { _controller: SharmecanadaplatformBundle:Contact:contact }
+
+sharmecanadaplatform_activity_file:
+    path:      /file-activtes
+    defaults:  { _controller: SharmecanadaplatformBundle:Activites:liste }

@@ -1,0 +1,11 @@
+sharmecanada_user_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: SharmecanadaUserBundle:Default:index }
+
+sharmecanada_user_loggin:
+    path:      /connexion
+    defaults:  { _controller: SharmecanadaUserBundle:Loggin:pageSignin }
+
+sharmecanada_user_loggup:
+    path:      /nouveau-compte
+    defaults:  { _controller: SharmecanadaUserBundle:User:add }
